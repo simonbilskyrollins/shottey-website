@@ -44,3 +44,7 @@ section {
 .gif {
     width: 100%;
 }
+
+.form-actions {
+  text-align: center;
+}
