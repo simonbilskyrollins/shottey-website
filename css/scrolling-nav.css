@@ -50,6 +50,11 @@ section {
     text-align: center;
 }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 .gif {
     width: 100%;
 }
