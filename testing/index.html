@@ -8,13 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shottey</title>
+    <title>Become A Tester</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103598307-2"></script>
@@ -32,7 +32,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top" id="mainNav">
       <div class="container">
-        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Shottey</a> -->
+        <a class="navbar-brand js-scroll-trigger" href="../index.html">Shottey</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,60 +54,41 @@
 
     <header class="bg-blue text-white">
       <div class="container text-center">
-        <h1>Shottey</h1>
-        <p class="lead">Volleyball Shot Tracking and Visualization</p>
+        <h1>Become A Tester</h1>
+        <p class="lead">Fill out the form below if you want to test Shottey!</p>
       </div>
-    </header>
 
-    <div class="big-image-container">
-        <img class="big-image" src="images/iPad1.png">
-    </div>
-
-    <div class="spacer">
-    </div>
-
-    <section id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>A revolution in shot tracking.</h2>
-            <p class="lead">Shottey replaces traditional pen and paper shot tracking with an easy to use iPad app. With Shotty, coaches have the power to track and explore more data than ever before through interactive visualizations.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <div class="vertical-center-text">
-              <div>
-               <h2>Shot Tracking</h2>
-               <p class="lead">Quickly track shots with only 3 taps.</p>
+            <form action="https://formspree.io/macallan@perabrown.com"
+                  method="POST">
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input name="Email" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 mx-auto">
-            <img class="gif" src="images/shotTracking.gif">
+              <div class="form-group">
+                <label for="inputName">Name</label>
+                <input name="Name" type="text" class="form-control" id="inputName" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="inputHow">In what context do you plan to use Shottey?</label>
+                <textarea name="How do you plan to use Shottey?" class="form-control" id="inputHow" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="inputReferral">How did you hear about Shottey?</label>
+                <textarea name="How did you hear about Shottey?" class="form-control" id="inputReferral" rows="3"></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <h2>Shot Visualization</h2>
-            <p class="lead">Easily compare hits and filter by player, rotation, and set.</p>
-          </div>
-          <div class="col-md-6 mx-auto">
-            <img class="gif" src="images/visualization.gif">
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
