@@ -48,3 +48,7 @@ section {
 .form-actions {
   text-align: center;
 }
+
+.headshot {
+  max-width: 100%;
+}
