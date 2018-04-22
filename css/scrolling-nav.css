@@ -4,17 +4,34 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
+ body {
+   min-height: 100vh;
+   position: relative;
+   margin: 0;
+ }
+
+ footer {
+   position: absolute;
+   bottom: 0;
+   width: 100vw;
+   max-width:100%;
+ }
+
 .bg-blue {
     background-color: #2662f7;
 }
 
 header {
-  padding: 154px 0 234px;
+  padding: 154px 0 180px;
+}
+
+.tutorial-header {
+  padding: 154px 0 100px;
 }
 
 @media (min-width: 992px) {
   header {
-    padding: 156px 0 234px;
+    padding: 156px 0 180px;
   }
 }
 
@@ -48,6 +65,27 @@ section {
 .form-actions {
   text-align: center;
 }
+
+.form-check-label {
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+input.form-check-input {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-right: 10px; */
+  top: 0px;
+  width: 17px;
+  height: 17px;
+  /* border-radius: 2px;
+  background-color: white; */
+}
+
+/* input.form-check-input:checked {
+  background-color: #2662f7;
+  border: 1.75px solid white;
+} */
 
 .headshot {
   max-width: 100%;
