@@ -94,3 +94,11 @@ input.form-check-input {
 .video-container{
   padding: 50px;
 }
+
+.about-link {
+  color: white;
+}
+
+.about-link:hover {
+  color: black;
+}
