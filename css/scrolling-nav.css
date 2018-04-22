@@ -90,3 +90,7 @@ input.form-check-input {
 .headshot {
   max-width: 100%;
 }
+
+.video-container{
+  padding: 50px;
+}
