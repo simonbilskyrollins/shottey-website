@@ -22,7 +22,6 @@ footer {
 }
 
 header {
-<<<<<<< HEAD
   padding: 154px 0 180px;
 }
 
@@ -34,9 +33,6 @@ header {
   header {
     padding: 156px 0 180px;
   }
-=======
-  padding: 154px 0 124px;
->>>>>>> master
 }
 
 section {
@@ -55,8 +51,23 @@ section {
     width: 286px;
 }
 
-.spacer {
-    height: 200px;
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 234px;
+  }
+
+  .big-image-container {
+    top: 260px;
+  }
+
+  .big-image {
+    width: auto;
+  }
+
+  .spacer {
+      height: 180px;
+  }
 }
 
 #about {
@@ -109,4 +120,12 @@ section {
 
 #TableOfContents {
     padding: 50px 0px 50px 0px;
+}
+
+.about-link {
+  color: white;
+}
+
+.about-link:hover {
+  color: black;
 }
