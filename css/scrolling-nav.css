@@ -41,21 +41,41 @@ section {
 
 .big-image-container {
     position: absolute;
-    top: 260px;
     width: 100%;
+    top: 300px;
 }
 
 .big-image {
     display: block;
     margin: auto;
+    width: 286px;
 }
 
-.spacer {
-    height: 180px;
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 234px;
+  }
+
+  .big-image-container {
+    top: 260px;
+  }
+
+  .big-image {
+    width: auto;
+  }
+
+  .spacer {
+      height: 180px;
+  }
 }
 
 #about {
     text-align: center;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
 }
 
 .gif {
