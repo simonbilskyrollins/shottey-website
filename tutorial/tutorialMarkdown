@@ -227,6 +227,56 @@ The player coming out is on the left and the player coming in for them is on the
 
 ## Visualization
 
+<img src="../images/screenshots/visualization.png" width="400" />
+
+Default Filters:
+- [One Team Tracking](#one-team-tracking): the court on the left shows the hits
+for the current rotation by the players in the front row at the time. The court on the right shows
+all hits.
+- [Two Team Tracking](#two-team-tracking): each court shows the hits for the
+current rotation by the players in the front row for each team.
+
+Shottey allows you to filter your hits on a variety of attributes
+- [Teams](#teams)
+- [Players](#players)
+- [Types](#types)
+- [Serve Receive](#serve-receive)
+- [Rotations](#rotations)
+- [Sets](#sets)
+- [Location](#location)
+
+#### Teams
+
+If you are [tracking one team](#one-team-tracking) there will not be a choice
+for which team you are viewing.
+
+#### Players
+
+If players are selected, the color of the selected player will be the same as
+the color of their hits on the court.
+
+#### Types
+
+Filter by kills, live balls, tools, blocks, and errors.
+
+#### Serve Receive
+
+Only show hits from serve receive or only show hits in transition.
+
+#### Rotations
+
+Filter by a particular rotation.
+
+#### Sets
+
+Choose which sets to show hits from.
+
+#### Location
+
+Filter by which third of the court the ball was hit from: left, middle, right.
+
+Tap the area of the court to toggle whether or not hits from that area are shown.
+
 ## Questions or Suggestions?
 
 If you have any additional questions or find this tutorial confusing please
