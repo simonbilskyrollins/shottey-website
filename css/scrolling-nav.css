@@ -4,17 +4,34 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
+body {
+   min-height: 100vh;
+   position: relative;
+   margin: 0;
+}
+
+footer {
+   position: absolute;
+   bottom: 0;
+   width: 100vw;
+   max-width:100%;
+}
+
 .bg-blue {
     background-color: #2662f7;
 }
 
 header {
-  padding: 154px 0 234px;
+  padding: 154px 0 180px;
+}
+
+.tutorial-header {
+  padding: 154px 0 100px;
 }
 
 @media (min-width: 992px) {
   header {
-    padding: 156px 0 234px;
+    padding: 156px 0 180px;
   }
 }
 
@@ -24,21 +41,42 @@ section {
 
 .big-image-container {
     position: absolute;
-    top: 260px;
     width: 100%;
+    top: 300px;
 }
 
 .big-image {
     display: block;
     margin: auto;
+    width: 286px;
 }
 
-.spacer {
-    height: 180px;
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 234px;
+  }
+
+  .big-image-container {
+    top: 260px;
+  }
+
+  .big-image {
+    width: auto;
+  }
+
+  .spacer {
+      height: 180px;
+  }
 }
 
 #about {
     text-align: center;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
 }
 
 .gif {
@@ -49,6 +87,49 @@ section {
   text-align: center;
 }
 
+.form-check-label {
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+input.form-check-input {
+  top: 0px;
+  width: 17px;
+  height: 17px;
+}
+
 .headshot {
   max-width: 100%;
+}
+
+ul {
+    padding: 0 0 0 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  padding: 100px 0px 100px 0px;
+}
+
+.video-container {
+  padding: 10px 10% 10px 10%;
+}
+
+#TableOfContents {
+    padding: 50px 0px 50px 0px;
+}
+
+.about-link {
+  color: white;
+}
+
+.about-link:hover {
+  color: black;
+}
+
+.about header {
+  padding-bottom: 108px;
 }
