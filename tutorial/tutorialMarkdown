@@ -1,0 +1,283 @@
+# [www.shottey.com](../)
+
+# Shottey Tutorial
+
+## Table Of Contents
+
+- [Game Setup](#game-setup)
+  - [One Team Tracking](#one-team-tracking)
+  - [Two Team Tracking](#two-team-tracking)
+- [Shot Tracking](#shot-tracking)
+  - [Manually Changing Score](#manually-changing-score)
+  - [Switching Sides](#switching-sides)
+  - [Undo](#undo)
+  - [Manual Rotate](#manual-rotate)
+  - [Toggle vs. Overlay](#toggle-vs-overlay)
+  - [Track Shots](#track-shots)
+    - [Kill](#kill)
+    - [Live](#live)
+    - [Tool](#tool)
+    - [Block](#block)
+    - [Error](#error)
+  - [Event History](#event-history)
+    - [Hit Event](#hit-event)
+    - [Score Change Event](#score-change-event)
+    - [Substitution Event](#substitution-event)
+- [Visualization](#visualization)
+
+## Game setup
+
+When creating a new game you have the ability to track one team or both teams.
+
+#### One Team Tracking
+
+One team tracking means that you will only be tracking one of the teams. You
+will still need to [manually change the score](#manually-changing-score) if the
+second team scores a point, but you do not have to set up their rotation.
+
+#### Two Team Tracking
+
+While tracking all the hits for both teams may be impossible on one iPad, two
+team tracking enables you the option of recording hits for the second team if
+you want.
+In addition, setting up the second team's rotation (the main difference between
+one team and two team tracking) gives you access to their rotation at any point!
+
+## Shot Tracking
+
+<img src="../images/screenshots/shot_tracking.png" width="400" />
+
+#### Manually Changing Score
+
+When a point ends from something other than a [kill](#kill), [tool](#tool), or
+[error](#error) you will need to manually increase the score by tapping the
+arrows next to the score.
+
+<img src="../images/screenshots/manual_score_change.png" width="400" />
+
+#### Switching Sides
+
+<img src="../images/screenshots/switch_rotate_undo.png" width="400" />
+
+In the middle of the third or fifth set the teams switch sides, but for your
+convenience you can press the Switch Sides button at any time.
+
+The Switch Sides button is in the upper right corner above the
+[Manual Rotate](#manual-rotate) button.
+
+#### Manual Rotate
+
+While it should be considered a last resort option to using the [Undo](#undo)
+button, if the rotations get off you can force Shottey to rotate using this
+button.
+Tapping the button will bring up an alert that allows you to select the team
+(if you are [Two Team Tracking](#two-team-tracking)) and the direction you would
+ like to rotate.
+
+ <img src="../images/screenshots/manual_rotate.png" width="400" />
+
+The Manual Rotate button is located in the upper right corner of the screen
+below the [Switch Sides](#switching-sides) button.
+
+#### Undo
+
+The undo button will remove the most recent event from
+[Event History](#event-history) and update accordingly.
+If the most recent event resulted in a score change ([kill](#kill),
+[tool](#tool), [error](#error)) the undo button will also remove the score
+change event.
+
+<img src="../images/screenshots/switch_rotate_undo.png" width="400" />
+
+The undo button is located in the upper right of the screen.
+
+#### Toggle vs Overlay
+There are two different ways you can distinguish between
+hard/soft hits and serve/transition hits.
+
+1. Toggle: When appropriate, change the toggles in the upper left corner from
+their default states (hard and transition hits) while logging each hit.
+
+  <img src="../images/screenshots/toggles.png" width="200" />
+
+2. Overlay: The overlays require you to decide if the hit was hard or soft
+
+  <img src="../images/screenshots/hard_overlay.png" width="400"/>
+
+  and if the hit was off of serve receive every time you track a hit.
+
+  <img src="../images/screenshots/serve_overlay.png" width="400"/>
+
+  In the settings panel you have the ability to decide whether or not
+  you would like to see the overlays.
+
+  <img src="../images/screenshots/settings_overlays.png" width="400" />
+
+
+
+
+#### Track Shots
+
+The structure for tracking shots is as follows:
+1. Tap the player who hit the ball
+2. Tap the location where the player contacted the ball
+3. Tap where the ball went
+
+Shottey automatically classifies the type of hit as
+[Kill](#kill), [Live](#live), [Tool](#tool), [Block](#block), [Error](#error)
+based on the various locations of the hits.
+
+##### Kill
+
+To record a kill:
+1. Tap the player who hit the ball
+2. Tap the location where the player contacted the ball
+3. Tap the opposite side of the court in bounds* where the ball went
+4. Tap the Kill radius button that appears where you tapped in Step 3
+
+
+*If you tap out of bounds Shottey will classify the hit as an [Error](#error).
+
+##### Live
+
+To record a live ball:
+1. Tap the player who hit the ball
+2. Tap the location where the player contacted the ball
+3. Tap the opposite side of the court in bounds* where the ball went
+4. Tap anywhere in bounds* except the black kill button. The exact location of
+third tap will not be kept, it is only to distinguish classify the hit as Live
+rather than [Kill](#kill).
+
+*If you tap out of bounds Shottey will classify the hit as a [Tool](#tool).
+
+##### Tool
+
+To record a tool:
+1. Tap the player who hit the ball
+2. Tap the location where the player contacted the ball
+3. Tap the opposite side of the court in bounds* where the other team contacted
+the ball. Usually this will be close to the net since tools are typically
+touched by the player blocking
+4. Tap where the ball went out of bounds
+
+*If you tap out of bounds Shottey will classify the hit as an [Error](#error).
+
+##### Block
+
+To record a block:
+1. Tap the player who hit the ball
+2. Tap the location where the player contacted the ball
+3. Tap the opposite side of the court in bounds* where the other team contacted
+the ball (typically at the net)
+4. Tap in bounds** where the ball went after being blocked
+
+IMPORTANT: Recording a block does not change the score. Shottey does not
+differentiate between blocked shots that result in a point and those that do
+not. If a team scores from a block be sure to
+[Manually Change the Score](#manually-changing-score).
+
+*If you tap out of bounds here Shottey will classify the hit as an
+[Error](#error).
+
+**If you tap out of bounds here Shottey will classify the hit as a
+[Tool](#tool).
+
+##### Error
+
+To record an error:
+1. Tap the player who hit the ball
+2. Tap the location where the player contacted the ball
+3. Tap where the ball went: out of bounds or tap anywhere on the same side of
+the court as Step 2
+
+#### Event History
+
+The event history is located at the bottom of the screen. The events are
+displayed in chronological order from left to right.
+
+<img src="../images/screenshots/event_history.png" width="400" />
+
+
+##### Hit Event
+
+<img src="../images/screenshots/event_hit.png" width="150" />
+
+The player is on the left and the abbreviation for the type of hit is on the
+right.
+
+Tapping a hit event will show that hit on the court.
+
+##### Score Change Event
+
+<img src="../images/screenshots/event_score.png" width="150" />
+
+The left team is on the left and the right team is on the right. The team that
+scored is in green.
+
+Tapping a score change event will show all the hits from that point on the
+court.
+
+
+##### Substitution Event
+
+<img src="../images/screenshots/event_sub.png" width="150" />
+
+The player coming out is on the left and the player coming in for them is on the
+ right.
+
+## Visualization
+
+<img src="../images/screenshots/visualization.png" width="400" />
+
+Default Filters:
+- [One Team Tracking](#one-team-tracking): the court on the left shows the hits
+for the current rotation by the players in the front row at the time. The court on the right shows
+all hits.
+- [Two Team Tracking](#two-team-tracking): each court shows the hits for the
+current rotation by the players in the front row for each team.
+
+Shottey allows you to filter your hits on a variety of attributes
+- [Teams](#teams)
+- [Players](#players)
+- [Types](#types)
+- [Serve Receive](#serve-receive)
+- [Rotations](#rotations)
+- [Sets](#sets)
+- [Location](#location)
+
+#### Teams
+
+If you are [tracking one team](#one-team-tracking) there will not be a choice
+for which team you are viewing.
+
+#### Players
+
+If players are selected, the color of the selected player will be the same as
+the color of their hits on the court.
+
+#### Types
+
+Filter by kills, live balls, tools, blocks, and errors.
+
+#### Serve Receive
+
+Only show hits from serve receive or only show hits in transition.
+
+#### Rotations
+
+Filter by a particular rotation.
+
+#### Sets
+
+Choose which sets to show hits from.
+
+#### Location
+
+Filter by which third of the court the ball was hit from: left, middle, right.
+
+Tap the area of the court to toggle whether or not hits from that area are shown.
+
+## Questions or Suggestions?
+
+If you have any additional questions or find this tutorial confusing please
+email shotteyvolleyball@gmail.com with questions or suggestions.
